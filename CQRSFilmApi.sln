@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Api", "CQRS.Api\CQRS.Api.csproj", "{12EA5137-EA1F-4DA3-8011-BF9D29343C56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Domain", "CQRS.Domain\CQRS.Domain.csproj", "{56711D7F-781D-42D6-B41A-F27B6CA55EAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Infrastructure", "CQRS.Infrastructure\CQRS.Infrastructure.csproj", "{9A143DC1-018C-47AC-9117-62A51D2CABD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Infrastructure.Migrations", "CQRS.Infrastructure.Migrations\CQRS.Infrastructure.Migrations.csproj", "{0F2B0B56-D0ED-443D-9732-6E5BF7C4764F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Tests", "CQRS.Tests\CQRS.Tests.csproj", "{FA9586A4-05A3-42A1-AFB7-51C6815C8E2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Shared", "CQRS.Shared\CQRS.Shared.csproj", "{634D21B0-8C28-45BE-93CF-4984E7F8A05E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Application", "CQRS.Application\CQRS.Application.csproj", "{531404B2-17D8-48FF-9112-2BB449702669}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12EA5137-EA1F-4DA3-8011-BF9D29343C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12EA5137-EA1F-4DA3-8011-BF9D29343C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12EA5137-EA1F-4DA3-8011-BF9D29343C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12EA5137-EA1F-4DA3-8011-BF9D29343C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56711D7F-781D-42D6-B41A-F27B6CA55EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56711D7F-781D-42D6-B41A-F27B6CA55EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56711D7F-781D-42D6-B41A-F27B6CA55EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56711D7F-781D-42D6-B41A-F27B6CA55EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A143DC1-018C-47AC-9117-62A51D2CABD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A143DC1-018C-47AC-9117-62A51D2CABD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A143DC1-018C-47AC-9117-62A51D2CABD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A143DC1-018C-47AC-9117-62A51D2CABD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F2B0B56-D0ED-443D-9732-6E5BF7C4764F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2B0B56-D0ED-443D-9732-6E5BF7C4764F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2B0B56-D0ED-443D-9732-6E5BF7C4764F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2B0B56-D0ED-443D-9732-6E5BF7C4764F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA9586A4-05A3-42A1-AFB7-51C6815C8E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9586A4-05A3-42A1-AFB7-51C6815C8E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9586A4-05A3-42A1-AFB7-51C6815C8E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9586A4-05A3-42A1-AFB7-51C6815C8E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634D21B0-8C28-45BE-93CF-4984E7F8A05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634D21B0-8C28-45BE-93CF-4984E7F8A05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634D21B0-8C28-45BE-93CF-4984E7F8A05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634D21B0-8C28-45BE-93CF-4984E7F8A05E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{531404B2-17D8-48FF-9112-2BB449702669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{531404B2-17D8-48FF-9112-2BB449702669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{531404B2-17D8-48FF-9112-2BB449702669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{531404B2-17D8-48FF-9112-2BB449702669}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

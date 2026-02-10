@@ -1,0 +1,87 @@
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using CQRS.Infrastructure;
+
+#nullable disable
+
+namespace CQRS.Infrastructure.Migrations.Migrations
+{
+    [DbContext(typeof(FilmDbContext))]
+    [Migration("20250212101521_CreateTableFilmRealisateur")]
+    partial class CreateTableFilmRealisateur
+    {
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        {
+#pragma warning disable 612, 618
+            modelBuilder
+                .HasAnnotation("ProductVersion", "9.0.2")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("CQRS.Domain.Entities.Film", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Annee")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Budget")
+                        .HasColumnType("int");
+
+                    b.Property<byte>("Genre")
+                        .HasColumnType("TINYINT");
+
+                    b.Property<Guid>("RealisateurId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Titre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RealisateurId");
+
+                    b.ToTable("Films");
+                });
+
+            modelBuilder.Entity("CQRS.Domain.Entities.Realisateur", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Nom")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Prenom")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Realisateurs");
+                });
+
+            modelBuilder.Entity("CQRS.Domain.Entities.Film", b =>
+                {
+                    b.HasOne("CQRS.Domain.Entities.Realisateur", "Realisateur")
+                        .WithMany()
+                        .HasForeignKey("RealisateurId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Realisateur");
+                });
+#pragma warning restore 612, 618
+        }
+    }
+}
