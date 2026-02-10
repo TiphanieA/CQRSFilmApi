@@ -75,13 +75,3 @@ Les règles de validation du film doivent être testées unitairement (avec xUni
 
 - Pas besoin d'authentification.
 - Aucune interface utilisateur requise.
-
-## Utilisation de librairies
-
-Comme tout développeur, nous n'aimons pas réinventer la roue, et apprécions de ce fait utiliser diverses bibliothèques selon les besoins.
-
-Cependant ce test nous permet d'évaluer comment vous abordez un problème et le résolvez. Par conséquent, nous préférons que vous limitiez l'utilisation de bibliothèques dans l'application (vous pouvez si vous le souhaitez indiquer les bibliothèques que vous auriez aimé utiliser). Cette règle ne s'applique toutefois pas aux tests unitaires pour lesquels vous pouvez utiliser les librairies de votre choix, en plus d'xUnit.
-
- ## Critères d'évaluation
- 
-Vous serez notamment évalué sur la maintenabilité de votre code (lisibilité, extensibilité, modularisation, homogénéité, etc.), ainsi que sur votre capacité à répondre au cahier des charges, quitte à prendre des décisions et à savoir les justifier si certains points vous semblent peu clairs.
